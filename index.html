@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BackgroundChanger</title>
+    <link rel="stylesheet" href="index.css">
+
+   <script>
+    function Red() {
+        document.getElementById('container').style.backgroundColor='Red';
+    }
+    function Green() {
+        document.getElementById('container').style.backgroundColor='Green';
+    }
+    function Blue() {
+        document.getElementById('container').style.backgroundColor='Blue';
+    }
+    function Yellow() {
+        document.getElementById('container').style.backgroundColor='Yellow';
+    }
+   </script>
+    
 </head>
+
 <body>
-    <h1>Hello World!!</h1>
+    <div id="container">
+        <h1>Background Changer</h1>
+        <p>Click a button to change a background color!</p>
+        <div class="btn"> 
+            <button id="red" onclick="Red()"> Red </button>
+            <button id="green" onclick="Green()"> Green </button>
+            <button id="blue" onclick="Blue()"> Blue </button>
+            <button id="yellow" onclick="Yellow()"> Yellow </button>
+        </div>
+    </div>
 </body>
 </html>
